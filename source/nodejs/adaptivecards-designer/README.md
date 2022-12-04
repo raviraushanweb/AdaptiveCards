@@ -1,3 +1,23 @@
+# How to Run
+clone the repo  
+```
+git clone https://github.com/raviraushanweb/AdaptiveCards.git
+```
+In terminal, go to following path
+```
+cd source/nodejs/adaptivecards-designer
+```
+Install the packages
+```
+npm install
+```
+build the project
+```
+npm run build
+```
+Open the *dist/index.html* file in browser  
+
+
 # Adaptive Card Designer
 
 The Adaptive Card Designer provides a rich, interactive design-time experience for authoring [adaptive cards](https://adaptivecards.io). 
