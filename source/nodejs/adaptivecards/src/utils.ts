@@ -10,6 +10,10 @@ declare global {
     interface Document {
         documentMode?: any;
     }
+
+    interface Window {
+        trustedTypes?: any;
+    }
 }
 
 export function isInternetExplorer(): boolean {
@@ -191,7 +195,7 @@ export function truncateText(element: HTMLElement, maxHeight: number, lineHeight
  * for which innerHTML yielded actual HTML (since fixed).
  */
 const ttDeprecatedPolicy = (typeof window === 'undefined') ? undefined : window.trustedTypes?.createPolicy("adaptivecards#deprecatedExportedFunctionPolicy", {
-    createHTML: (value) => value
+    createHTML: (value: any): any => value
 });
 
 /** @deprecated Use {@link truncateText} instead. */

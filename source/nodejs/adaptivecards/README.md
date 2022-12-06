@@ -1,3 +1,28 @@
+# How to Run
+- Install webpack globallly if not already
+  ```
+    npm install -g webpack
+  ```
+- Link webpack
+  ```
+    npm link webpack-cli
+  ```
+- Install these libraries
+  ```
+    npm i copy-webpack-plugin html-webpack-plugin ts-loader webpack-cli -D
+  ```
+- Install all the packages
+  ```
+    npm install
+  ```
+- build the project
+  ```
+    npm run build
+  ```
+
+### Output folder: dist
+
+
 # Adaptive Cards
 
 Adaptive Cards are a new way for developers to exchange card content in a common and consistent way.
